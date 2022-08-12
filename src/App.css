@@ -1,38 +1,101 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #3e4754;
+  width: 90%;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.Container-search {
+  margin: 10px;
+  padding: 10px;
+}
+
+.Container-search input {
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 22px;
+  color: #fff;
+}
+
+.buton-Fake {
+  width: 70px;
+  background-color: #d5d5d5;
+  padding: 2px;
+  height: 35px;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.App h1 {
+  text-align: center;
+}
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.form input[type="text"] {
+  padding: 10px;
+  width: 20%;
+
+  border-radius: 6px;
+}
+.form input[type="text"]:focus,
+.form button[type="submit"]:focus {
+  outline: none;
+}
+.form button[type="submit"] {
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+}
+.todo-listItems {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-item button {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 8px;
+}
+.todo-item button:focus {
+  outline: none;
+}
+
+.update-form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.update-new-input {
+  width: 30%;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  padding: 8px;
+  outline: none;
+  margin: 10px;
+}
+.update-new-btn {
+  background-color: darkorchid;
+  color: #fff;
+  cursor: pointer;
 }
